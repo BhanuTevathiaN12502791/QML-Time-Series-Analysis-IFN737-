@@ -40,3 +40,7 @@ work/
 reference/*.pdf
 reference/*.pptx
 reference/*.docx
+
+# Local learning-curve trial arrays and histories (compact summaries are tracked)
+results/learning_curves/trials/
+results/learning_curves_local/

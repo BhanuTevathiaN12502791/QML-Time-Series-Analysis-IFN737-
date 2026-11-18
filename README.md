@@ -26,6 +26,19 @@ The repository includes source code, the frozen protocol, a notebook and compact
 
 [Repository setup and verification](docs/REPOSITORY_SETUP.md) · [Model card](MODEL_CARD.md)
 
+## Learning curves: MAE, training time and RAM
+
+[Measured curves and protocol](results/learning_curves/README.md) show **MAE vs T**, **training seconds vs T** and **peak RAM vs T**, where T is 7–140 calendar days. They also include anomaly F1/precision/recall/false alerts and companion forecast RMSE/WAPE/R². There are 84 isolated CPU trials on development section 0185-E, with fixed validation/test periods and three seeds/repetitions. Shading shows observed min–max, not confidence intervals. MAE belongs to a separate next-interval LSTM forecasting task; the original anomaly-detection results remain unchanged.
+
+```sh
+python -m pip install -r requirements-forecast.txt
+python fetch_data.py
+python learning_curves.py --out results/learning_curves_local
+python plot_learning_curves.py --results results/learning_curves_local
+```
+
+PyTorch is optional for the anomaly project and required for these companion forecast trials. Use the [official installation selector](https://pytorch.org/get-started/locally/) for a build suitable for your platform; CPU-only Linux/Windows builds avoid unnecessary GPU dependencies. View committed figures/CSVs without installing it. Use a new `--out` folder for a fresh measurement run on another software/hardware environment.
+
 ## Quick start
 
 Use Python 3.12 or 3.13. From a clone of this repository:

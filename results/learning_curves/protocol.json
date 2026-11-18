@@ -1,0 +1,73 @@
+{
+  "created_on": "2026-11-19",
+  "site": "0185-E",
+  "days": [
+    7,
+    14,
+    28,
+    56,
+    84,
+    112,
+    140
+  ],
+  "seeds": [
+    17,
+    42,
+    91
+  ],
+  "models": [
+    "lstm_forecast",
+    "if_context_full",
+    "if_context_pca2",
+    "sitdd_adapted"
+  ],
+  "source_sha256": "1c3d86712dfdce5eb43ac4aa33519cdac00806865589ecce934c7e52598e6e51",
+  "code_sha256": {
+    "core.py": "75fbdbc6ad1eacf3f3e5cc5f8b48e4a2654597cd79b2d5c80514329c5f23b447",
+    "learning_curves.py": "504e3a0dadcbbd05a421a9c753bfe48800adaeef1f5512f3baa62721b30c4cff",
+    "learning_forecast.py": "39c039d8188025eb0db22fac02b9007d6f0dca3e112dc85df08cc4d0712907ab",
+    "selected_parameters.json": "f0ec01432ac81afdca394fabc9059a1e73b600c723ba0afbdbb39f30045c16a3"
+  },
+  "training_end": "2019-07-04 23:45:00",
+  "validation_first": "2019-07-05 00:00:00",
+  "validation_last": "2019-08-05 11:45:00",
+  "test_first": "2019-08-05 12:00:00",
+  "test_last": "2019-09-05 23:45:00",
+  "definition": "T is a trailing calendar-day lookback ending at the fixed 70% raw-row boundary. All inputs and targets of each training window must fall in that lookback. No imputation.",
+  "timing": "Training wall seconds include feature/context/scaling preparation, model fitting and validation-based stopping/calibration. Exclude library imports, final test inference and artifact I/O.",
+  "memory": "2ms sampled process RSS during preprocessing/training/calibration, baseline after data/framework load; absolute peak includes libraries, incremental peak is peak minus baseline. Each trial is a fresh serial CPU process.",
+  "forecast": {
+    "window": 20,
+    "hidden_units": 32,
+    "max_epochs": 40,
+    "patience": 7,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "learning_rate": 0.001
+  },
+  "evaluation": "Fixed gap-valid validation/test targets for every T within each task. Forecast task uses 20 past readings; detection task uses current + seven prior readings. Tasks have different eligible targets and metrics.",
+  "selected_parameters": {
+    "max_samples": 256,
+    "sitdd_k": 3,
+    "n_estimators": 100,
+    "selection_data": "development validation label_set_1 only",
+    "protocol_sha256": "3a4f4ebc5682939e0936fb82a8f0b01b5bf5e711d153f23a13825061baad4064",
+    "max_samples_validation_f1": {
+      "256": 0.24329767368991329,
+      "128": 0.23610540222499318
+    },
+    "knn_validation_f1": {
+      "3": 0.6566323139702368,
+      "5": 0.6368533216280643,
+      "7": 0.6107943554090303,
+      "8": 0.6020086056387192,
+      "9": 0.5843062349264374,
+      "10": 0.565886852500313
+    },
+    "demo_model": "if_context_full"
+  },
+  "machine": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "logical_cpus": 8,
+  "physical_ram_bytes": 8589934592,
+  "interpretation": "Exploratory single development-section learning/resource curves. Original final-site research protocol and results are unchanged. Do not choose an optimal T from the test curves without separate validation."
+}

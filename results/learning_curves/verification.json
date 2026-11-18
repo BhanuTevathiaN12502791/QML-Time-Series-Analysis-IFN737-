@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-11-19",
+  "trials": 84,
+  "checks": {
+    "complete_trial_grid": true,
+    "source_hash": true,
+    "frozen_fitting_code": true,
+    "trial_fingerprints_match": true,
+    "all_values_finite": true,
+    "memory_ordering": true,
+    "time_ordering": true,
+    "saved_predictions_reproduce_metrics": true,
+    "training_coverage_matches_calendar_days": true,
+    "fixed_test_targets_within_each_task": true
+  },
+  "passed": true
+}
