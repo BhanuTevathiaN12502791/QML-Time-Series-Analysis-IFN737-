@@ -1,0 +1,31 @@
+{
+  "verified_on": "2026-11-19",
+  "checks": {
+    "protocol_sha256": true,
+    "frozen_disjoint_site_allocation": true,
+    "source_hashes": true,
+    "all_147_git_object_hashes": true,
+    "source_weekday_agrees_with_parsed_date": true,
+    "complete_site_fold_method_seed_label_grid": true,
+    "saved_targets_times_labels_volumes_match_source": true,
+    "saved_split_counts_match_independent_chronology": true,
+    "individual_and_aggregate_files_match": true,
+    "all_methods_share_eligible_targets": true,
+    "fold_test_targets_disjoint": true,
+    "saved_scores_reproduce_all_pointwise_metrics": true,
+    "complete_development_search_grid": true,
+    "global_selection_uses_development_validation": true,
+    "macro_summaries_recompute": true,
+    "108_refits_reproduce_thresholds_and_predictions": true,
+    "both_delivered_checkpoints_match_recorded_test_predictions": true
+  },
+  "metric_rows_recomputed": 30312,
+  "refit_sites": [
+    "0185-E",
+    "1196-E",
+    "0185-W"
+  ],
+  "models_refitted": 108,
+  "metric_mismatches": [],
+  "passed": true
+}

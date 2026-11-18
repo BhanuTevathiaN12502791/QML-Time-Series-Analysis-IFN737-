@@ -1,0 +1,20 @@
+{
+  "max_samples": 256,
+  "sitdd_k": 3,
+  "n_estimators": 100,
+  "selection_data": "development validation label_set_1 only",
+  "protocol_sha256": "3a4f4ebc5682939e0936fb82a8f0b01b5bf5e711d153f23a13825061baad4064",
+  "max_samples_validation_f1": {
+    "256": 0.24329767368991329,
+    "128": 0.23610540222499318
+  },
+  "knn_validation_f1": {
+    "3": 0.6566323139702368,
+    "5": 0.6368533216280643,
+    "7": 0.6107943554090303,
+    "8": 0.6020086056387192,
+    "9": 0.5843062349264374,
+    "10": 0.565886852500313
+  },
+  "demo_model": "if_context_full"
+}

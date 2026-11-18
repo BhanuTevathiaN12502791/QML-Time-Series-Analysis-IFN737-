@@ -1,0 +1,42 @@
+# Local Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Local credentials and editor state
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Upstream data and fitted estimators: acquire/train locally
+data/
+models/
+*.joblib
+*.pt
+*.pth
+
+# Detailed generated scores and resumable jobs
+*.npz
+results/development/
+results/evaluation/
+results/normal_only/
+results/example_detections.csv
+my_detections.csv
+detections_*.csv
+
+# Distribution archives and scratch assets
+*.zip
+*.part
+*.tmp
+work/
+
+# Private course documents and downloaded research attachments
+reference/*.pdf
+reference/*.pptx
+reference/*.docx

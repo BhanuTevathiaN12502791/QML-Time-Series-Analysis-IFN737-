@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this project, cite this software and the upstream AnoLT dataset/paper."
+type: software
+title: "Classical traffic-volume anomaly detection for IFN737"
+version: 1.0.0
+date-released: 2026-11-19
+authors:
+  - family-names: Tevathia
+    given-names: Bhanu
+repository-code: "https://github.com/BhanuTevathiaN12502791/QML-Time-Series-Analysis-IFN737-"
+abstract: "Classical traffic-volume anomaly detection on AnoLT, comparing temporal context and matched PCA representations under chronological validation. Quantum integration is future work."
+keywords:
+  - anomaly detection
+  - traffic volume
+  - time series
+  - isolation forest
+  - principal component analysis

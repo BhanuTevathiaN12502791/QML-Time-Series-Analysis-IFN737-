@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-11-19",
+  "unchanged_detection_artifacts": {
+    "protocol.json": true,
+    "protocol.sha256": true,
+    "selected_parameters.json": true,
+    "results/summary.csv": true,
+    "results/paired_effects.csv": true,
+    "results/normal_only_sensitivity.csv": true,
+    "models/0185-E/detector.joblib": true,
+    "models/0185-E_sitdd/detector.joblib": true
+  },
+  "isolated_benchmark_complete": true,
+  "rss_measurement": [
+    "resource.ru_maxrss"
+  ]
+}
