@@ -1,14 +1,14 @@
 cff-version: 1.2.0
-message: "If you use this project, cite this software and the upstream AnoLT dataset/paper."
+message: "If you use this project, cite this software and the relevant AnoLT or Victorian SCATS data sources."
 type: software
-title: "Classical traffic-volume anomaly detection for IFN737"
-version: 1.0.0
+title: "Traffic-volume anomaly detection and Melbourne event forecasting for IFN737"
+version: 1.1.0
 date-released: 2026-11-19
 authors:
   - family-names: Tevathia
     given-names: Bhanu
 repository-code: "https://github.com/BhanuTevathiaN12502791/QML-Time-Series-Analysis-IFN737-"
-abstract: "Classical traffic-volume anomaly detection on AnoLT, comparing temporal context and matched PCA representations under chronological validation. Quantum integration is future work."
+abstract: "Classical traffic-volume anomaly detection on AnoLT, forecast learning/resource curves, and a 2025 Melbourne holiday and seasonal stress study with rolling retraining. Quantum integration is future work."
 keywords:
   - anomaly detection
   - traffic volume

@@ -1,0 +1,151 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Detect historical section 0185-E",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/detect.py",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Train contextual IF for 0185-E",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train_site.py",
+      "args": [
+        "--data",
+        "${workspaceFolder}/data/0185-E.csv",
+        "--out",
+        "${workspaceFolder}/models/0185-E"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Train adapted Si-TDD for 0185-E",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train_site.py",
+      "args": [
+        "--model",
+        "sitdd_adapted",
+        "--data",
+        "${workspaceFolder}/data/0185-E.csv",
+        "--out",
+        "${workspaceFolder}/models/0185-E_sitdd"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Detect with adapted Si-TDD",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/detect.py",
+      "args": [
+        "--model",
+        "${workspaceFolder}/models/0185-E_sitdd/detector.joblib",
+        "--history",
+        "${workspaceFolder}/data/0185-E.csv"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Run fresh learning/resource curves",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/learning_curves.py",
+      "args": [
+        "--out",
+        "${workspaceFolder}/results/learning_curves_local"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Plot local learning/resource curves",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/plot_learning_curves.py",
+      "args": [
+        "--results",
+        "${workspaceFolder}/results/learning_curves_local"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Run holiday and seasonal event study",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/event_study.py",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    },
+    {
+      "name": "Build final results PDF",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_final_report.py",
+      "args": [
+        "--out",
+        "${workspaceFolder}/results/final_report.pdf"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MPLBACKEND": "Agg"
+      }
+    }
+  ]
+}

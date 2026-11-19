@@ -1,0 +1,6 @@
+left,right,interpretation,delta_mae,ci95_low,ci95_high,n_intervals,n_week_clusters
+hgb_calendar_rolling56,hgb_calendar_frozen,rolling history versus frozen history; same calendar features,-0.4352404724604887,-0.6268810092246996,-0.23805894164650165,26756,43
+hgb_calendar_frozen,hgb_lags_frozen,matched frozen calendar-feature ablation,0.21550556955439412,0.05618579288923639,0.37096067950396533,26756,43
+hgb_calendar_rolling56,hgb_lags_frozen,combined calendar and rolling-history change,-0.21973490290609454,-0.34426456648924814,-0.09061299079276608,26756,43
+hgb_calendar_rolling56,persistence,rolling model versus persistence,-2.0172258442712816,-2.191702685013301,-1.8328829948252583,26756,43
+lstm_frozen,persistence,frozen LSTM versus persistence,-1.5047028144212524,-1.6139772104367782,-1.3866035445319425,26756,43

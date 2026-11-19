@@ -1,0 +1,22 @@
+{
+  "verified_on": "2026-11-19",
+  "prediction_rows": 140500,
+  "daily_metric_rows": 1490,
+  "rolling_models_refitted": 11,
+  "checks": {
+    "source_hash": true,
+    "model_grid": true,
+    "gap_windows_match": true,
+    "source_targets_dates_and_all_models_match": true,
+    "overall_metrics_recompute": true,
+    "all_daily_means_errors_and_coverage_recompute": true,
+    "dst_day_lengths": true,
+    "all_365_days_including_absent_date": true,
+    "christmas_full_24h": true,
+    "daily_error_flags_use_validation_only": true,
+    "both_saved_hgb_models_match_predictions": true,
+    "all_rolling_refits_use_past_only_and_reproduce": true,
+    "saved_lstm_weights_and_training_only_scaling_match": true
+  },
+  "passed": true
+}

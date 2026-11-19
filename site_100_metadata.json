@@ -1,0 +1,48 @@
+{
+  "verified_on": "2026-11-19",
+  "dataset": "https://opendata.transport.vic.gov.au/dataset/victorian-traffic-signals",
+  "resource": "https://opendata.transport.vic.gov.au/dataset/victorian-traffic-signals/resource/1036a318-8867-4dc6-bd84-fc3bcd6cbdb9",
+  "download_url": "https://opendata.transport.vic.gov.au/dataset/923af458-363d-469f-bc5e-84746a80b9a2/resource/1036a318-8867-4dc6-bd84-fc3bcd6cbdb9/download/victorian_traffic_signals.csv",
+  "sha256": "e5fd0df86f223db345ffbdeb21db188e2240f4eb7409e4998ea5fde0a8a766af",
+  "downloaded_bytes": 301397,
+  "inventory_updated": "2026-08-12",
+  "coordinate_reference_system": "WGS84",
+  "site_rows": [
+    {
+      "SITE_NO": "100",
+      "SITE_NAME": "BURWOOD HWY/LIVINGSTONE",
+      "TYPE": "INT",
+      "MUNICIPALITY": "WTH",
+      "LATITUDE": "-37.85642",
+      "LONGITUDE": "145.181054"
+    }
+  ],
+  "note": "Current inventory verifies site identity/location; detector 2 physical lane direction is not established by this resource.",
+  "resolved_location": {
+    "intersection": "Burwood Highway / Livingstone Road",
+    "suburb": "Vermont South",
+    "municipality": "City of Whitehorse",
+    "metropolitan_region": "Eastern metropolitan Melbourne",
+    "latitude": -37.85642,
+    "longitude": 145.181054,
+    "interpretation": "Intersection and coordinates are direct inventory values. Expanded road name/suburb and metropolitan scope are supported by council road register and Victorian Government geographic descriptions."
+  },
+  "supporting_sources": [
+    {
+      "title": "Whitehorse City Council Local Access Road Register, page 55",
+      "url": "https://www.whitehorse.vic.gov.au/sites/whitehorse.vic.gov.au/files/assets/documents/Whitehorse-Road-Register-Local-Access.pdf",
+      "evidence": "Livingstone Road is in Vermont South, extending from Hawthorn Rd to Burwood Hwy; document states its roads lie within City of Whitehorse."
+    },
+    {
+      "title": "Victoria Government \u2014 Metropolitan Melbourne",
+      "url": "https://liveinmelbourne.vic.gov.au/discover/melbourne/metropolitan-melbourne",
+      "evidence": "Lists Whitehorse among metropolitan Melbourne council areas and describes its eastern location."
+    },
+    {
+      "title": "Planning Victoria \u2014 Victoria in Future geographic area definitions",
+      "url": "https://www.planning.vic.gov.au/guides-and-resources/Data-spatial-and-insights/discover-and-access-planning-open-data/victoria-in-future",
+      "evidence": "Lists Whitehorse in the Eastern metropolitan region."
+    }
+  ],
+  "historical_limit": "The downloaded inventory is current (updated 12 August 2026), not an archived 2025 detector configuration. It identifies the site location but does not prove that detector geometry or configuration remained unchanged throughout 2025."
+}

@@ -1,0 +1,32 @@
+{
+  "recorded_on": "2026-11-19",
+  "recording_scope": "Post-run software and code snapshot; not a preregistration",
+  "python": "3.13.5",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.15.0",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.8.0",
+    "reportlab": "5.1.0"
+  },
+  "code_sha256": {
+    "event_study.py": "309d1078a09377245ab40734d5130bbf94c96427b3f7c14042fc18964c084717",
+    "learning_forecast.py": "39c039d8188025eb0db22fac02b9007d6f0dca3e112dc85df08cc4d0712907ab",
+    "fetch_event_data.py": "08108a7f9e5cf40db6cdba78deb3f0b861899f50807eb81bdabe3b54433b5b5b",
+    "analyse_event_tradeoffs.py": "3c2ed4e561f18eb9f4c388ec40b34ff5e38e2c1eb7ecf5c98b9e9c25f98e66ee",
+    "verify_event_study.py": "4d8bda51b620366822caeba8e9fd2c1579f4c7d313a097dc7c938b4d00cff967"
+  },
+  "runtime": {
+    "device": "CPU",
+    "threads": 1,
+    "seed": 42
+  },
+  "tests": {
+    "passed": 57,
+    "command": "python -m unittest discover -p 'test_*.py' -v"
+  }
+}

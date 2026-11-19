@@ -1,0 +1,350 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Python: Create .venv (fresh clone)",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3.12",
+          "-m",
+          "venv",
+          ".venv"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Install anomaly dependencies",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Python: Install forecasting dependencies",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-forecast.txt"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Data: Fetch pinned AnoLT CSVs",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "fetch_data.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Tests: Run synthetic regression suite",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "-m",
+        "unittest",
+        "discover",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Model: Train contextual IF 0185-E",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "train_site.py",
+        "--data",
+        "data/0185-E.csv",
+        "--out",
+        "models/0185-E"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Model: Train adapted Si-TDD 0185-E",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "train_site.py",
+        "--model",
+        "sitdd_adapted",
+        "--data",
+        "data/0185-E.csv",
+        "--out",
+        "models/0185-E_sitdd"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Model: Detect historical 0185-E",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "detect.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Curves: Run fresh local learning curves",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "learning_curves.py",
+        "--out",
+        "results/learning_curves_local"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Curves: Plot fresh local learning curves",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "plot_learning_curves.py",
+        "--results",
+        "results/learning_curves_local"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Events: Run holiday and seasonal study",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "event_study.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Project: Reproduce full anomaly benchmark",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "args": [
+        "run_all.py",
+        "--fetch",
+        "--workers",
+        "3"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Data: Fetch 2025 holiday/event traffic",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": [],
+      "args": [
+        "fetch_event_data.py"
+      ]
+    },
+    {
+      "label": "Python: Install report and notebook dependencies",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": [],
+      "args": [
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-report.txt",
+        "ipykernel",
+        "debugpy"
+      ]
+    },
+    {
+      "label": "Report: Build final PDF",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {
+        "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MPLBACKEND": "Agg"
+        }
+      },
+      "problemMatcher": [],
+      "args": [
+        "build_final_report.py",
+        "--out",
+        "${workspaceFolder}/results/final_report.pdf"
+      ]
+    }
+  ]
+}

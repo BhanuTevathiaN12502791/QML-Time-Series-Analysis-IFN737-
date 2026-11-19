@@ -1,0 +1,198 @@
+{
+  "verified_on": "2026-11-19",
+  "jurisdiction": "Victoria, Australia; Melbourne metropolitan scope",
+  "year": 2025,
+  "calendar_timezone": "Australia/Melbourne",
+  "public_holidays": [
+    {
+      "date": "2025-01-01",
+      "name": "New Year's Day",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-01-27",
+      "name": "Australia Day observed",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-03-10",
+      "name": "Labour Day",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-04-18",
+      "name": "Good Friday",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-04-19",
+      "name": "Saturday before Easter Sunday",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-04-20",
+      "name": "Easter Sunday",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-04-21",
+      "name": "Easter Monday",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-04-25",
+      "name": "ANZAC Day",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-06-09",
+      "name": "King's Birthday",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-09-26",
+      "name": "Friday before AFL Grand Final",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-11-04",
+      "name": "Melbourne Cup",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-12-25",
+      "name": "Christmas Day",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    },
+    {
+      "date": "2025-12-26",
+      "name": "Boxing Day",
+      "source": "https://business.vic.gov.au/business-information/public-holidays/victorian-public-holidays-2025"
+    }
+  ],
+  "school_terms": [
+    {
+      "term": 1,
+      "start": "2025-01-29",
+      "end": "2025-04-04",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria"
+    },
+    {
+      "term": 2,
+      "start": "2025-04-22",
+      "end": "2025-07-04",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria"
+    },
+    {
+      "term": 3,
+      "start": "2025-07-21",
+      "end": "2025-09-19",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria"
+    },
+    {
+      "term": 4,
+      "start": "2025-10-06",
+      "end": "2025-12-19",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria"
+    }
+  ],
+  "school_breaks": [
+    {
+      "name": "summer_start",
+      "start": "2025-01-01",
+      "end": "2025-01-28",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria",
+      "definition": "Inclusive dates inferred between official student term dates, clipped to 2025"
+    },
+    {
+      "name": "autumn",
+      "start": "2025-04-05",
+      "end": "2025-04-21",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria",
+      "definition": "Inclusive dates inferred between official student term dates, clipped to 2025"
+    },
+    {
+      "name": "winter",
+      "start": "2025-07-05",
+      "end": "2025-07-20",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria",
+      "definition": "Inclusive dates inferred between official student term dates, clipped to 2025"
+    },
+    {
+      "name": "spring",
+      "start": "2025-09-20",
+      "end": "2025-10-05",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria",
+      "definition": "Inclusive dates inferred between official student term dates, clipped to 2025"
+    },
+    {
+      "name": "summer_end",
+      "start": "2025-12-20",
+      "end": "2025-12-31",
+      "source": "https://www.vic.gov.au/school-term-dates-and-holidays-victoria",
+      "definition": "Inclusive dates inferred between official student term dates, clipped to 2025"
+    }
+  ],
+  "school_notes": [
+    "Term 1 official staff start is 28 January; government students start 29 January, used here.",
+    "Official government-school dates do not establish every independent/Catholic school or local pupil-free day.",
+    "Term intervals include weekends; distinguish weekday school days and public holidays when comparing travel patterns.",
+    "2025 school terms are not all eight weeks long. An explicitly defined eight-week comparison can use Term 4 weeks 1–8, 6 October–30 November, with public holidays flagged separately."
+  ],
+  "weather_events": [
+    {
+      "id": "vic_damaging_winds_20251022",
+      "name": "Melbourne damaging-wind event",
+      "start": "2025-10-22",
+      "end": "2025-10-22",
+      "sensitivity_start": "2025-10-21",
+      "sensitivity_end": "2025-10-23",
+      "event_type": "damaging_winds",
+      "sources": [
+        "https://www.bom.gov.au/clim_data/IDCKGC1AR0/202510.summary.shtml",
+        "https://www.bom.gov.au/climate/dwo/202510/html/IDCJDW3072.202510.shtml"
+      ],
+      "evidence": "Bureau summary identifies damaging winds across Victoria and Melbourne on 22 October. Scoresby maximum gust 70 km/h at 17:10 local; Melbourne Airport 94 km/h and Fawkner Beacon 107 km/h support metropolitan exposure.",
+      "location_limit": "Scoresby is an eastern-Melbourne proxy, not a colocated measurement at SCATS 100:2."
+    },
+    {
+      "id": "melbourne_heavy_rain_20251026_27",
+      "name": "Melbourne heavy-rain/severe-weather window",
+      "start": "2025-10-26",
+      "end": "2025-10-27",
+      "event_type": "heavy_rain_and_storms",
+      "sources": [
+        "https://www.bom.gov.au/clim_data/IDCKGC1AR0/202510.summary.shtml",
+        "https://www.bom.gov.au/climate/dwo/202510/html/IDCJDW3072.202510.shtml",
+        "https://www.bom.gov.au/climate/dwo/202510/html/IDCJDW3033.202510.shtml"
+      ],
+      "evidence": "The low crossed Bass Strait on 26 October; rain and severe storms affected Victoria/Greater Melbourne. Olympic Park 35.4 mm and Scoresby 19.6 mm were reported for the 24 hours to 9 am on 27 October.",
+      "location_limit": "Use the two-day window; a regional event flag does not prove causation or a lane-specific traffic disruption."
+    }
+  ],
+  "excluded_event": {
+    "id": "cyclone_alfred_2025",
+    "name": "Severe Tropical Cyclone Alfred",
+    "event_lifetime_start": "2025-02-21",
+    "event_lifetime_end": "2025-03-08",
+    "suggested_impact_window_start": "2025-03-05",
+    "suggested_impact_window_end": "2025-03-10",
+    "sources": [
+      "https://www.bom.gov.au/cyclone/history/Alfred2025.shtml",
+      "https://www.bom.gov.au/climate/rainfall/archive/20250310.archive.shtml"
+    ],
+    "reason": "Documented major impacts are southeast Queensland/northeast New South Wales. Do not label Melbourne traffic as cyclone-exposed; cyclone robustness requires suitable affected-region traffic data."
+  },
+  "time_alignment_notes": [
+    "SCATS published interval ends use fixed AEST UTC+10. Convert interval-start time (end minus 15 minutes) to Australia/Melbourne before assigning local event dates.",
+    "Melbourne DST calendar days can contain 92 or 100 quarter-hour intervals; ordinary days contain 96. Daily means should show interval coverage rather than silently forcing 96.",
+    "Bureau daily rainfall is measured over 24 hours ending 9 am local, not civil midnight-to-midnight.",
+    "Event markers are exposure/context indicators, not ground-truth anomaly or incident labels. Do not estimate anomaly-detection F1 from calendar holidays alone."
+  ],
+  "full_year_dataset_availability": {
+    "dataset": "https://opendata.transport.vic.gov.au/dataset/traffic-signal-volume-data",
+    "december_resource": "https://opendata.transport.vic.gov.au/dataset/traffic-signal-volume-data/resource/991edc21-6607-4a91-938d-8bdbc8dc62df",
+    "december_download": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/991edc21-6607-4a91-938d-8bdbc8dc62df/download/traffic_signal_volume_data_december_2025.zip",
+    "note": "Local official catalogue contains all 12 monthly 2025 resources, including December 2025. Record-level extraction/quality still needs checking."
+  }
+}

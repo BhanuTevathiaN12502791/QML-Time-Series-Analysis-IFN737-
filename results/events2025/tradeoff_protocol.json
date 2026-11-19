@@ -1,0 +1,14 @@
+{
+  "draws": 10000,
+  "seed": 42,
+  "differences": "left minus right; negative favors left",
+  "estimand": "Pooled 15-minute test MAE on the common targets, including partial days",
+  "method": "Paired calendar-week cluster percentile bootstrap, Monday-based weeks, 10000 resamples by default",
+  "limitations": [
+    "Descriptive uncertainty conditional on one detector/year and fitted models.",
+    "Weekly clusters do not establish independence across seasons or consecutive weeks.",
+    "No correction for multiple post-hoc comparisons; no model was tuned using these intervals.",
+    "Fit times are a single machine run; rolling sums 11 refits, LSTM includes validation early stopping.",
+    "Pareto flags describe observed error/cost and do not constitute validation-based model selection."
+  ]
+}

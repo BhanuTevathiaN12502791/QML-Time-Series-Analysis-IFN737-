@@ -12,7 +12,11 @@ __pycache__/
 .env.*
 !.env.example
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
 
 # Upstream data and fitted estimators: acquire/train locally
 data/
@@ -44,3 +48,13 @@ reference/*.docx
 # Local learning-curve trial arrays and histories (compact summaries are tracked)
 results/learning_curves/trials/
 results/learning_curves_local/
+
+# Downloaded annual SCATS event-study series and archives
+data_events/
+
+# Also ignore a local environment symlink
+.venv
+
+# Compact compressed predictions are published; keep the expanded copy local.
+results/events2025/predictions.csv
+results/events2025_local/

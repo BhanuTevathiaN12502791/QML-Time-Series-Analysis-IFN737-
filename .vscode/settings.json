@@ -1,0 +1,23 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvironment": true,
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "test_*.py"
+  ],
+  "python.testing.cwd": "${workspaceFolder}",
+  "files.watcherExclude": {
+    "**/.venv/**": true,
+    "**/results/learning_curves/trials/**": true,
+    "**/results/evaluation/**": true,
+    "**/results/normal_only/**": true
+  },
+  "files.exclude": {
+    "**/__pycache__": true
+  }
+}

@@ -16,3 +16,12 @@ The adapted Si-TDD-style implementation uses same-weekday/time-slot kth absolute
 ## Dependencies
 
 The implementation uses NumPy, pandas, scikit-learn, joblib, Matplotlib, psutil and threadpoolctl under their respective upstream terms. Their source and documentation are available through the package metadata and official project sites. No dependency source code is vendored here.
+# Victorian SCATS event-study sources
+
+The 2025 traffic-signal counts and current traffic-signal inventory are supplied by the Victorian Department of Transport and Planning through Transport Victoria Open Data under Creative Commons Attribution 4.0. Source monthly URLs and exact archive hashes are recorded in `event_data_manifest.json`; site metadata and its inventory date are in `site_100_metadata.json`. Derived event counts/results retain this attribution. No endorsement is implied.
+
+- Traffic counts: https://opendata.transport.vic.gov.au/dataset/traffic-signal-volume-data
+- Signal inventory: https://opendata.transport.vic.gov.au/dataset/victorian-traffic-signals
+- CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+Public-holiday and school-term date facts are attributed to the Victorian Government. Weather windows are attributed to the Australian Bureau of Meteorology. Exact page URLs and exposure definitions appear in `event_calendar_2025.json` and the final report. The project does not relicense third-party webpages or imply that those markers are ground-truth incident annotations. Cyclone Alfred's documented Queensland/NSW impacts are not assigned to the Melbourne detector.

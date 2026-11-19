@@ -1,0 +1,75 @@
+{
+  "year": 2025,
+  "lanes": [
+    "100:2",
+    "100:3"
+  ],
+  "sources": [
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/991edc21-6607-4a91-938d-8bdbc8dc62df/download/traffic_signal_volume_data_december_2025.zip",
+      "resource_id": "991edc21-6607-4a91-938d-8bdbc8dc62df",
+      "sha256": "f82d5a076c02105fc0ba4202e9d69f8435c697df6f1877c9906195d4f4f507f0"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/82a430dd-a9a7-4654-b414-b484fe74ac1d/download/traffic_signal_volume_data_november_2025.zip",
+      "resource_id": "82a430dd-a9a7-4654-b414-b484fe74ac1d",
+      "sha256": "83626fa3833879a902e505cb97885d3cd9697bdb4a8efadf8c8b7902ee2b070f"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/0e07a36b-df09-486c-8181-3560d4244530/download/traffic_signal_volume_data_october_2025.zip",
+      "resource_id": "0e07a36b-df09-486c-8181-3560d4244530",
+      "sha256": "10ec16201f77cde1f5199b203f3a0d3ecb40addda9bdc691e8940be2ec0e4287"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/9bb60e01-67c6-4d29-9967-3d2b42017589/download/traffic_signal_volume_data_september_2025.zip",
+      "resource_id": "9bb60e01-67c6-4d29-9967-3d2b42017589",
+      "sha256": "aa1093a461dbf7315e4232c5253b1ba779272f8e70bc93f15f5b01c8ec3a8fad"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/d4f42d84-1c13-4dbd-b6c9-6ff6947f7fc7/download/traffic_signal_volume_data_august_2025.zip",
+      "resource_id": "d4f42d84-1c13-4dbd-b6c9-6ff6947f7fc7",
+      "sha256": "60ef1e02fa79c6acdaa9d2e30a9a274ffe9625126139b7bfd16ca3faeec98754"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/1fdba545-bfc1-4eff-99df-82df6f7765be/download/traffic_signal_volume_data_july_2025.zip",
+      "resource_id": "1fdba545-bfc1-4eff-99df-82df6f7765be",
+      "sha256": "a560af968b773a43a49a9dda59488a410b05ce1771c8a94f0cbe0f9698f9f737"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/49361f68-dfa6-4c4e-a862-288676c703e2/download/traffic_signal_volume_data_june_2025.zip",
+      "resource_id": "49361f68-dfa6-4c4e-a862-288676c703e2",
+      "sha256": "8299fb051aa522e8bcaa5f1da2986081450d807c732af0fcc126d12ea2be2973"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/1864e3c1-26c5-4364-b818-51d3ed517a21/download/traffic_signal_volume_data_may_2025.zip",
+      "resource_id": "1864e3c1-26c5-4364-b818-51d3ed517a21",
+      "sha256": "6d3897c516017f37a15107b313b10715bf4d792b05c145888383d925467a3b2a"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/6eaa7221-b62d-4869-b964-f446a70bf2d4/download/traffic_signal_volume_data_april_2025.zip",
+      "resource_id": "6eaa7221-b62d-4869-b964-f446a70bf2d4",
+      "sha256": "424496409a697deaba6dc991e63a12934eb72d93b462329dd9074ca51f5ad401"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/8879d52c-da38-4b47-bc9f-c3200fc54ef9/download/traffic_signal_volume_data_march_2025.zip",
+      "resource_id": "8879d52c-da38-4b47-bc9f-c3200fc54ef9",
+      "sha256": "744f20b80d0851d298b4e3819ca2fb39a5f7bb49e8e447ddf799e4bafb946a78"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/9d8b883c-1605-4640-8693-efa493ecb8a4/download/traffic_signal_volume_data_february_2025.zip",
+      "resource_id": "9d8b883c-1605-4640-8693-efa493ecb8a4",
+      "sha256": "bf925bd27ce6e27a9d73ecc33db1c6a40ea8707acd573704bb10ff4ee0058f0a"
+    },
+    {
+      "url": "https://opendata.transport.vic.gov.au/dataset/331b846b-1e18-415f-a3f3-ce4198d86c82/resource/9ec59255-c4ae-4fe6-a2f9-a82768b23454/download/traffic_signal_volume_data_january_2025.zip",
+      "resource_id": "9ec59255-c4ae-4fe6-a2f9-a82768b23454",
+      "sha256": "766e704982b887ead8536adae0c88bef87bea62b295e8bc643228078fc74bd82"
+    }
+  ],
+  "source": "https://opendata.transport.vic.gov.au/dataset/traffic-signal-volume-data",
+  "licence": "CC BY 4.0",
+  "attribution": "Department of Transport and Planning, Victoria",
+  "timezone": "fixed AEST UTC+10",
+  "timestamp": "interval end",
+  "quality": "Entire detector-day masked if CT_RECORDS != 96 or alarms != 0; invalid/negative counts missing; valid zeros retained"
+}
